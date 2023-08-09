@@ -2,50 +2,79 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>layout</title>
     <link href="style.css" rel="stylesheet">
 </head>
     <body>
         <header class="header">
-            <div class="container">
-              <div class="header__inner">
-                <nav class="menu">
-                    <button class="button menu__button">
-                        <img class="menu__img" src="images/menu.png" alt="Меню">
-                    </button>
-                </nav>
-                    <div class="logo">
-                        <img class="logo__img" src="images/logo.png" alt="Логотип CPS">
+<!--            <div class="container">-->
+<!--                <div class="header__inner">-->
+                    <div class="header__left">
+                        <nav class="menu">
+                            <button class="button menu__button">
+                                <img class="button__img" src="images/menu.svg" alt="Меню">
+                            </button>
+                        </nav>
+
+                        <a class="logo__link" href="#">
+                            <img class="logo__img" src="images/logo.svg" alt="Логотип CPS">
+                        </a>
+                        <div class="divider">
+                            <img class="divider__img" src="images/divider.svg" alt="">
+                        </div>
                     </div>
-                    <div class="buttons">
-                        <button class="button buttons-item">
-                            <img class="buttons__img" src="images/call.png" alt="Заказать звонок">
-                        </button>
-                        <button class="button buttons-item">
-                            <img class="buttons__img" src="images/chat.png" alt="Обратная связь">
-                        </button>
-                        <button class="button buttons-item">
-                            <img class="buttons__img" src="images/profile.png" alt="Профиль">
-                        </button>
-                    </div>
-                    <nav class="nav">
-                        <ul class="nav__list">
-                            <li class="nav__list-item">
-                                <a class="nav__link" href="#">
-                                    <p class="nav__text">Оставить заявку</p>
-                                    <img class="nav__img" src="images/repair.png" alt="Оставить заявку">
-                                </a>
-                            </li>
-                            <li class="nav__list-item">
-                                <a class="nav__link" href="#">
-                                    <p class="nav__text">Статус ремонта</p>
-                                    <img class="nav__img" src="images/checkstatus.png" alt="Статус ремонта">
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-              </div>
-            </div>
+<!--                        <div class="logo">-->
+<!--                            <img class="logo__img" src="images/logo.svg" alt="Логотип CPS">-->
+<!--                        </div>-->
+
+<!--                    <div class="header__right">-->
+<!--                        <div class="buttons">-->
+<!--                            <button class="button buttons-item">-->
+<!--                                <img class="buttons__img" src="images/call.svg" alt="Заказать звонок">-->
+<!--                            </button>-->
+<!--                            <button class="button buttons-item">-->
+<!--                                <img class="buttons__img" src="images/chat.svg" alt="Обратная связь">-->
+<!--                            </button>-->
+<!--                            <button class="button buttons-item">-->
+<!--                                <img class="buttons__img" src="images/profile.svg" alt="Профиль">-->
+<!--                            </button>-->
+<!--                        </div>-->
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li class="nav__list-item call">
+                                    <button class="button nav__button">
+                                        <img class="button__img" src="images/call.svg" alt="Заказать звонок">
+                                    </button>
+                                </li>
+                                <li class="nav__list-item chat">
+                                    <button class="button nav__button">
+                                        <img class="button__img" src="images/chat.svg" alt="Обратная связь">
+                                    </button>
+                                </li>
+                                <li class="nav__list-item profile">
+                                    <button class="button nav__button">
+                                        <img class="button__img" src="images/profile.svg" alt="Профиль">
+                                    </button>
+                                </li>
+                                <li class="nav__list-item">
+                                    <label class="button__text" for="repair">Оставить заявку</label>
+                                    <button class="button nav__button" id="repair">
+                                        <img class="button__img" src="images/repair.svg" alt="Оставить заявку">
+                                    </button>
+                                </li>
+                                <li class="nav__list-item">
+                                    <label class="button__text" for="checkstatus">Статус ремонта</label>
+                                    <button class="button nav__button" id="checkstatus">
+                                        <img class="button__img" src="images/checkstatus.svg" alt="Статус ремонта">
+                                    </button>
+                                </li>
+                            </ul>
+                        </nav>
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--            </div>-->
         </header>
     </body>
 </html>
