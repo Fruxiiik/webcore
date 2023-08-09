@@ -21,33 +21,102 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+@media (min-width: 1120px) {
+    .header {
+        background-color: #F8F8F8;
+        justify-content: flex-end;
+    }
+}
+
 
 .header__left {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 16px;
+    gap: 0.8rem;
 }
+
+@media (min-width: 1120px) {
+    .header__left {
+        display: none;
+    }
+}
+
 
 .button {
     border: none;
-    background-color: white;: ;
+    background-color: white;
+}
+@media (min-width: 1120px) {
+    .button {
+        background-color: #F8F8F8;
+    }
 }
 
-.button__img {
+.button__img, .divider__img, .logo__img {
     vertical-align: top;
 }
 
-.logo__link {
-    align-self: center;
+.menu__divider {
+    display: none;
 }
 
-.logo__img {
-    vertical-align: top;
+@media (min-width: 480px) {
+    .menu__divider {
+        display: unset;
+    }
+}
+
+.logo__divider {
+    display: unset;
+}
+
+@media (min-width: 480px) {
+    .logo__divider {
+        display: none;
+    }
 }
 
 .call, .chat, .profile {
     display: none;
+}
+
+.nav__list-divider {
+    display: none;
+}
+@media (min-width: 480px) {
+    .nav__list-divider {
+        display: unset;
+    }
+}
+@media (min-width: 1120px) {
+    .nav__divider {
+        display: none;
+    }
+}
+
+@media (min-width: 360px) {
+    .profile {
+        display: unset;
+    }
+}
+
+@media (min-width: 440px) {
+    .chat {
+        display: unset;
+    }
+}
+
+@media (min-width: 480px) {
+    .call {
+        display: unset;
+    }
+}
+
+@media (min-width: 1120px) {
+    .call, .chat, .profile {
+        display: none;
+    }
 }
 
 .nav__list {
@@ -56,14 +125,31 @@ body {
     align-content: center;
     align-items: center;
     justify-content: space-between;
-    gap: 16px;
+    gap: 0.8rem;
 }
+
+@media (min-width: 1120px) {
+    .nav__list-item {
+        display: unset;
+    }
+}
+
+
+
 
 .button__text {
     display: none;
 }
+@media (min-width: 1120px) {
+    .button__text {
+        display: unset;
+    }
+}
 
-
+/*display: flex;*/
+/*align-items: center;*/
+/*gap: 8px;*/
+/*font-size: 16px;*/
 
 
 
