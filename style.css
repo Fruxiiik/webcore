@@ -3,12 +3,12 @@
     padding: 0;
 }
 
-.body {
+body {
     min-width: 320px;
     overflow-x: hidden;
 }
 
-.html {
+html {
     font-size: 14px;
     box-sizing: border-box;
 }
@@ -24,8 +24,6 @@
     align-items: center;
 }
 
-
-
 .nav__list {
     display: flex;
     flex-wrap: wrap;
@@ -37,17 +35,6 @@
     display: none;
 }
 
-.menu__img, .nav__img, .buttons__img {
-    width: 40px;
-    height: 40px;
-    flex-shrink: 0;
-}
-
 .buttons {
     display: none;
-}
-
-.logo__img {
-    width: 96.548px;
-    height: 50.815px;
 }
