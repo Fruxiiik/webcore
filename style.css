@@ -132,11 +132,13 @@ html {
 .nav__item-divider {
     display: none;
 }
+
 @media (min-width: 480px) {
     .nav__item-divider {
         display: unset;
     }
 }
+
 @media (min-width: 1120px) {
     .nav__divider {
         display: none;
