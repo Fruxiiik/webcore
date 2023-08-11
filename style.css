@@ -252,7 +252,6 @@ html {
 }
 
 
-
 .nav__link {
     outline: none;
     text-decoration: none;
@@ -275,8 +274,9 @@ html {
 
 .main__list {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     overflow: auto;
+    gap: 8px;
     margin-top: 24px;
 }
 
@@ -296,7 +296,6 @@ html {
     .main__list {
         overflow: unset;
         flex-wrap: wrap;
-        gap: 8px;
         margin-top: 11px;
     }
 }
