@@ -365,7 +365,7 @@ html {
     white-space: nowrap;
 }
 
-.nav__link:focus, .nav__link:active {
+.nav__link:focus, .nav__link:active, .nav__link:hover {
     border-radius: 6px;
     border: 2px solid #B8FFEC;
     background: #FFF;
