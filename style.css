@@ -153,8 +153,12 @@ html {
 
 
 
-.divider__img, .logo__img {
+.divider__img, .logo__img, .button__img {
     vertical-align: middle;
+}
+
+.button__img {
+    margin-right: 8px;
 }
 
 @media (min-width: 360px) {
@@ -361,7 +365,7 @@ html {
     white-space: nowrap;
 }
 
-.nav__link:focus {
+.nav__link:focus, .nav__link:active {
     border-radius: 6px;
     border: 2px solid #B8FFEC;
     background: #FFF;
@@ -428,6 +432,8 @@ html {
 }
 
 .info__button {
+    display: flex;
+    align-items: center;
     padding: 16px 0;
     color: #1B1C21;
     background-color: #F8F8F8;
