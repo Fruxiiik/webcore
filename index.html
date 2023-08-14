@@ -9,11 +9,8 @@
     <body class="page">
         <header class="header page__header">
             <div class="header__left">
-                <nav class="menu header__menu">
                     <button class="button circle__button menu__button">
-                        <img class="button__img" src="images/menu.svg" alt="Меню">
                     </button>
-                </nav>
                 <div class="menu__divider">
                     <img class="divider__img" src="images/divider.svg" alt="">
                 </div>
@@ -24,71 +21,39 @@
                     <img class="divider__img" src="images/divider.svg" alt="">
                 </div>
             </div>
-                <nav class="header__nav">
-                    <ul class="header__list nav__list">
-                        <li class="header__item header__item-call header__item-hidden">
-                            <button class="button circle__button call__button">
-                                <img class="button__img" src="images/call.svg" alt="Заказать звонок">
-                            </button>
-                        </li>
-                        <li class="header__item header__item-chat header__item-hidden">
-                            <button class="button circle__button chat__button">
-                                <img class="button__img" src="images/chat.svg" alt="Обратная связь">
-                            </button>
-                        </li>
-                        <li class="header__item header__item-profile header__item-hidden">
-                            <button class="button circle__button profile__button">
-                                <img class="button__img" src="images/profile.svg" alt="Профиль">
-                            </button>
-                        </li>
-                        <li class="header__item header__item-divider header__item-hidden">
-                            <div class="header__divider">
-                                <img class="divider__img" src="images/divider.svg" alt="">
-                            </div>
-                        </li>
-                        <li class="header__item header__item-repair">
-                            <label class="header__label">
-                                <span class="header__text-hidden">Оставить заявку</span>
-                                <button class="button circle__button repair__button">
-                                    <img class="button__img" src="images/repair.svg" alt="Оставить заявку">
-                                </button>
-                            </label>
-                        </li>
-                        <li class="header__item header__item-checkstatus">
-                            <label class="header__label">
-                                <span class="header__text-hidden">Статус ремонта</span>
-                                <button class="button circle__button checkstatus__button">
-                                    <img class="button__img" src="images/checkstatus.svg" alt="Статус ремонта">
-                                </button>
-                            </label>
-                        </li>
-                    </ul>
-                </nav>
+            <div class="header__buttons">
+                <button class="button circle__button call__button"></button>
+                <button class="button circle__button chat__button"></button>
+                <button class="button circle__button profile__button"></button>
+                <div class="header__divider">
+                    <img class="divider__img" src="images/divider.svg" alt="">
+                </div>
+                <label class="header__label">
+                    <span class="header__text-hidden">Оставить заявку</span>
+                    <button class="button circle__button repair__button"></button>
+                </label>
+                <label class="header__label">
+                    <span class="header__text-hidden">Статус ремонта</span>
+                    <button class="button circle__button checkstatus__button"></button>
+                </label>
+            </div>
         </header>
     <main class="main">
         <header class="main__header">
             <div class="wrapper">
                 <h1 class="main__title">Услуги и сервисы</h1>
-                <nav class="nav header__nav">
-                    <ul class="header__list nav__list">
-                        <li class="header__item header__item-repair hidden">
-                            <label class="header__label">
-                                <span class="header__text-hidden">Оставить заявку</span>
-                                <button class="button circle__button repair__button">
-                                    <img class="button__img" src="images/repair.svg" alt="Оставить заявку">
-                                </button>
-                            </label>
-                        </li>
-                        <li class="header__item header__item-checkstatus hidden">
-                            <label class="header__label">
-                                <span class="header__text-hidden">Статус ремонта</span>
-                                <button class="button circle__button checkstatus__button">
-                                    <img class="button__img" src="images/checkstatus.svg" alt="Статус ремонта">
-                                </button>
-                            </label>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="main__buttons hidden">
+                    <label class="header__label header__label-repair">
+                        <span class="header__text-hidden">Оставить заявку</span>
+                        <button class="button circle__button repair__button">
+                        </button>
+                    </label>
+                    <label class="header__label header__label-checkstatus">
+                        <span class="header__text-hidden">Статус ремонта</span>
+                        <button class="button circle__button checkstatus__button">
+                        </button>
+                    </label>
+                </div>
             </div>
 
             <nav class="nav main__nav">
@@ -133,7 +98,7 @@
                 </button>
             </article>
             <figure class="info__figure">
-                <img class="info__img" src="images/main_background.png" alt="Background image">
+                <img class="info__img" src="images/main_background.jpg" alt="Background image">
             </figure>
         </section>
     </main>

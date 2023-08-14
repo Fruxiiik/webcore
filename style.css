@@ -46,6 +46,8 @@ html {
 
 .page {
     min-width: 320px;
+    max-width: 1440px;
+    margin: 0 auto;
     overflow-x: hidden;
     background-color: #F8F8F8;
 }
@@ -94,9 +96,33 @@ html {
     border: none;
 }
 
-.button__img, .divider__img, .logo__img {
-    vertical-align: top;
+.menu__button {
+    background-image: url("images/menu.svg");
 }
+
+.call__button {
+    display: none;
+    background-image: url("images/call.svg");
+}
+
+.chat__button {
+    display: none;
+    background-image: url("images/chat.svg");
+}
+
+.profile__button {
+    display: none;
+    background-image: url("images/profile.svg");
+}
+
+.repair__button {
+    background-image: url("images/repair.svg");
+}
+
+.checkstatus__button {
+    background-image: url("images/checkstatus.svg");
+}
+
 
 .menu__divider {
     display: none;
@@ -119,37 +145,33 @@ html {
     }
 }
 
-.header__item-hidden {
-    display: none;
+@media (min-width: 480px) {
+    .header__left {
+        margin-right: auto;
+    }
 }
 
-@media (min-width: 480px) {
-    .header__item-divider {
-        display: unset;
-    }
+
+
+.divider__img, .logo__img {
+    vertical-align: middle;
 }
 
 @media (min-width: 360px) {
-    .header__item-profile {
+    .profile__button {
         display: unset;
     }
 }
 
-@media (min-width: 440px) {
-    .header__item-chat {
+@media (min-width: 420px) {
+    .chat__button {
         display: unset;
     }
 }
 
 @media (min-width: 480px) {
-    .header__item-call {
+    .call__button {
         display: unset;
-    }
-}
-
-@media (min-width: 1120px) {
-    .header__item-repair {
-        margin-right: 24px;
     }
 }
 
@@ -183,6 +205,35 @@ html {
 @media (min-width: 1120px) {
     .hidden {
         display: unset;
+    }
+}
+
+@media (min-width: 1120px) {
+    .main__buttons {
+        display: flex;
+        gap: 32px;
+    }
+}
+
+.header__divider {
+    display: none;
+}
+
+@media (min-width: 480px) {
+    .header__divider {
+        display: unset;
+    }
+}
+
+.header__buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (min-width: 560px) {
+    .header__buttons {
+        gap: 16px;
     }
 }
 
@@ -310,12 +361,17 @@ html {
     white-space: nowrap;
 }
 
-.nav__link:hover {
+.nav__link:focus {
     border-radius: 6px;
     border: 2px solid #B8FFEC;
     background: #FFF;
     padding: 4px 12px;
 }
+
+/*.button:hover, .button:focus, .button:active {*/
+/*    */
+/*    border: 2px solid #B8FFEC;*/
+/*}*/
 
 @media (min-width: 768px) {
     .main__info {
