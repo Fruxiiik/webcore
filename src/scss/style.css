@@ -449,6 +449,30 @@ html {
     letter-spacing: -0.2px;
 }
 
+.more-text__button-img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    background: url("../../src/img/more_info.svg") no-repeat;
+    background-size: cover;
+    margin-right: 9px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.more-brands__button-img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    background: url("../../src/img/more_info.svg") no-repeat;
+    background-size: cover;
+    margin-right: 9px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
 .brands {
     padding-top: 24px;
     min-width: 320px;
@@ -491,7 +515,7 @@ html {
     box-sizing: border-box;
     border: 2px solid #FF3E79;
     border-radius: 20px;
-    background: none;
+    background: url("../../src/img/arrow_brand.svg") center center no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -603,9 +627,7 @@ html {
     transition: transform 0.3s ease-in-out;
 }
 
-.rotate {
-    transform: rotate(180deg);
-}
+
 
 .swiper:after {
     content: "";
