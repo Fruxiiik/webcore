@@ -1,3 +1,6 @@
+// import '../index.html';
+import '../scss/style.scss';
+
 let moreBrandBtn = document.querySelector('.more-brands__button');
 let moreBrandImage = document.querySelector('.more-brands__button-img');
 let moreBrandText = document.querySelector('.more-brands');
@@ -373,6 +376,71 @@ window.addEventListener('DOMContentLoaded', () => {
                 },
                 767: {
                     slidesPerView: 3.02,
+                },
+            }
+        },
+    );
+    resizableSwiper(
+        '(max-width: 767px)',
+        '.prices__swiper',
+        {
+            loop: true,
+            spaceBetween: 16,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                310: {
+                    slidesPerView: 1.1,
+                },
+                320: {
+                    slidesPerView: 1.22,
+                },
+                330: {
+                    slidesPerView: 1.25,
+                },
+                360: {
+                    slidesPerView: 1.35,
+                },
+                390: {
+                    slidesPerView: 1.45,
+                },
+                420: {
+                    slidesPerView: 1.55,
+                },
+                450: {
+                    slidesPerView: 1.65,
+                },
+                480: {
+                    slidesPerView: 1.75,
+                },
+                510: {
+                    slidesPerView: 1.85,
+                },
+                540: {
+                    slidesPerView: 1.95,
+                },
+                570: {
+                    slidesPerView: 2.05,
+                },
+                600: {
+                    slidesPerView: 2.15,
+                },
+                630: {
+                    slidesPerView: 2.25,
+                },
+                660: {
+                    slidesPerView: 2.35,
+                },
+                690: {
+                    slidesPerView: 2.45,
+                },
+                720: {
+                    slidesPerView: 2.55,
+                },
+                750: {
+                    slidesPerView: 2.65,
                 },
             }
         },
