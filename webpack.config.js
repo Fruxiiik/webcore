@@ -32,6 +32,7 @@ module.exports = {
       filename: "[name].[contenthash].css",
     }),
   ],
+
   module: {
     rules: [
       {

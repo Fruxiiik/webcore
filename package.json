@@ -32,21 +32,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "webpack --mode development",
-    "start": "webpack-dev-server --mode development --open",
-    "watch": "webpack --mode development --watch",
-    "start1": "webpack serve",
+    "start": "webpack serve",
     "build-dev": "webpack",
-    "build-prod": "gh-pages -d dist",
     "clear": "rd /s /q dist"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "repository": {
-    "url": "git+https://github.com/fruxiiik/layout.git"
-  }
+  "license": "ISC"
 }
