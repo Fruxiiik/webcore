@@ -27,15 +27,17 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
   },
-  "name": "layout",
+  "homepage": "https://Fruxiiik.github.io/webcore",
+  "name": "webcore",
   "description": "",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d dist",
+
+    "deploy" : "npm run build&&gh-pages -d dist",
     "dev": "webpack --mode development",
     "start": "webpack serve",
-    "build-dev": "webpack",
+    "build": "webpack",
     "clear": "rd /s /q dist"
   },
   "keywords": [],
