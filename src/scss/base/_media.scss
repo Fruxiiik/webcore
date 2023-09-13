@@ -1,0 +1,327 @@
+@media (min-width: 320px) {
+  .main__list {
+    margin-top: 24px;
+  }
+}
+
+@media (min-width: 360px) {
+  .button {
+    &__profile {
+      display: unset;
+    }
+  }
+}
+
+@media (min-width: 420px) {
+  .button {
+    &__chat {
+      display: unset;
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .divider {
+    &__menu {
+      display: unset;
+    }
+    &__logo {
+      display: none;
+    }
+    &__header {
+      display: unset;
+    }
+  }
+  .header {
+    &__left {
+      margin-right: auto;
+    }
+  }
+  .button {
+    &__call {
+      display: unset;
+    }
+  }
+}
+
+@media (min-width: 560px) {
+  .header {
+    &__buttons {
+      gap: 16px;
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  .page {
+    &__header {
+      padding: 0 24px;
+    }
+  }
+
+  .application {
+    &__text {
+      width: 421px;
+    }
+  }
+
+  .swiper .services-hide {
+    display: none;
+  }
+  .swiper {
+    &:after {
+      display: none;
+    }
+  }
+  .button {
+    &__more-brands {
+      display: flex;
+    }
+
+    &__more-services {
+      display: flex;
+    }
+  }
+  .swiper .swiper-wrapper {
+    width: auto;
+  }
+  .swiper-slide {
+    &__btn-wrapper {
+      width: 224px;
+    }
+
+    &__service-wrapper {
+      width: 224px;
+    }
+  }
+  .swiper .hide {
+    display: none;
+  }
+
+  .main {
+    &__header {
+      padding: 0 24px;
+    }
+
+    &__list {
+      margin-top: 34px;
+    }
+
+    &__info {
+      display: flex;
+      padding: 0 24px;
+    }
+  }
+
+  .brands {
+    &__grid {
+      display: grid;
+      gap: 24px;
+      margin: 0;
+      grid-template-columns: repeat(auto-fit, 224px);
+      grid-template-rows: repeat(auto-fit, 72px);
+      justify-content: space-between;
+      padding: 24px 24px 0 24px;
+    }
+    
+    &__title {
+      padding-left: 24px;
+    }
+  }
+
+  .info {
+    padding: 32px 48px 0 0;
+    flex: 1 1 0;
+
+    &__img {
+      border-radius: 10px;
+    }
+
+    &__figure {
+      padding-top: 32px;
+      flex: 1 1 0;
+    }
+  }
+
+  .services {
+    &__grid {
+      display: grid;
+      gap: 24px;
+      margin: 0;
+      grid-template-columns: repeat(auto-fit, 224px);
+      grid-template-rows: repeat(auto-fit, 160px);
+      justify-content: space-between;
+      padding: 24px 24px 0 24px;
+    }
+
+    &__title {
+      padding-left: 24px;
+    }
+  }
+
+  .prices {
+    &__grid {
+      display: grid;
+      gap: 24px;
+      margin: 0;
+      grid-template-columns: repeat(auto-fit, 224px);
+      grid-template-rows: repeat(auto-fit, 160px);
+      justify-content: space-between;
+      padding: 24px 24px 0 24px;
+    }
+    
+    &__title {
+      padding-left: 24px;
+    }
+
+    &__grid-hidden {
+      display: none;
+    }
+
+    &__table {
+      display: flex;
+    }
+  }
+
+  .footer {
+    padding: 50px 24px 24px 24px;
+
+    &__wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px;
+    }
+
+    &__copyright {
+      text-align: left;
+    }
+
+    &__policy {
+      text-align: center;
+    }
+
+    &__offer {
+      text-align: right;
+    }
+  }
+}
+
+@media (min-width: 1016px) {
+  .swiper .show {
+    display: unset;
+  }
+
+  .swiper .services-show {
+    display: unset;
+  }
+}
+
+@media (min-width: 1120px) {
+  .page {
+    &__header {
+      display: none;
+    }
+  }
+
+  .header {
+    &__text-hidden {
+      display: unset;
+    }
+  }
+  .hidden {
+    display: unset;
+  }
+
+  .main {
+    transform: translateY(18px);
+    &__buttons {
+      display: flex;
+      gap: 32px;
+    }
+
+    &__list {
+      overflow: unset;
+      flex-wrap: wrap;
+      margin-top: 11px;
+    }
+
+    &__header {
+      padding: 0 32px;
+    }
+
+    &__info {
+      padding: 0 32px;
+    }
+  }
+
+
+  .application {
+    padding: 0 32px 32px 32px;
+  }
+
+  .button {
+    &__more-brands {
+      margin-left: 32px;
+    }
+    &__more-services {
+      margin-left: 32px;
+    }
+  }
+  .brands {
+    &__grid {
+      grid-template-columns: repeat(auto-fit, 240px);
+      padding: 32px 32px 0 32px;
+      gap: 32px;
+    }
+    &__title {
+      padding-left: 32px;
+    }
+  }
+  .swiper-slide {
+    &__btn-wrapper {
+      width: 240px;
+    }
+    &__service-wrapper {
+      width: 240px;
+    }
+  }
+
+  .services {
+    &__grid {
+      grid-template-columns: repeat(auto-fit, 240px);
+      padding: 32px 32px 0 32px;
+      gap: 32px;
+    }
+    &__title {
+      padding-left: 32px;
+    }
+  }
+
+  .prices {
+    &__grid {
+      grid-template-columns: repeat(auto-fit, 240px);
+      padding: 32px 32px 0 32px;
+      gap: 32px;
+    }
+    &__table {
+      padding: 0 32px 32px 32px;
+    }
+    &__title {
+      padding-left: 32px;
+    }
+  }
+
+  .content {
+    &__row {
+      &:not(:last-child)::after {
+        width: calc(100% - 98px);
+      }
+    }
+  }
+
+  .footer {
+    padding: 50px 32px 32px 32px;
+    transform: translateY(18px);
+  }
+}

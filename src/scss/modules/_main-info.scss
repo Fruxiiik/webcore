@@ -1,0 +1,58 @@
+.button-img {
+  &__more-text {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    background: url("../../img/more_info.svg") no-repeat;
+    background-size: cover;
+    margin-right: 9px;
+    transition: transform 0.4s ease-in-out;
+  }
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.info {
+  padding: 24px 16px 0;
+
+  &__text {
+    color: $main-text-color;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: 0.2px;
+  }
+
+  &__more-text {
+    display: none;
+  }
+
+  &__more-text--active {
+    display: inline-block;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+}
+
+.button {
+  &__info {
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+    color: $main-text-color;
+    background-color: $background-grey;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+  }
+
+}
+

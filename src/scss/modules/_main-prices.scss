@@ -1,0 +1,182 @@
+.prices {
+    padding-top: 24px;
+    min-width: 320px;
+
+  &__title {
+    color: $grey;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    padding: 16px;
+    width: 100%;
+    background: linear-gradient(270deg, $white 0%, $background-grey 100%);
+  }
+
+    &__grid {
+        display: flex;
+        gap: 0;
+        padding-top: 16px;
+        padding-left: 16px;
+        padding-bottom: 36px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__table {
+        display: none;
+        flex-direction: column;
+        padding: 0 24px 24px 24px;
+    }
+}
+
+.swiper-slide {
+  &__prices-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    height: 200px;
+    border-radius: 6px;
+    border: 1px solid $light-grey;
+    background: $white;
+    padding: 0 16px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+}
+
+.content {
+    &__grid {
+        display: grid;
+        gap: 16px;
+        grid-template-rows: 3fr 2fr 2fr;
+        grid-template-columns: auto 119px;
+        grid-template-areas:
+    "service service"
+    "price ."
+    "term btn";
+        width: 260px;
+        height: 200px;
+        border-radius: 6px;
+        border: 1px solid $light-grey;
+        background: $white;
+        padding: 16px 16px 20px 16px;
+    }
+
+    &__row {
+        display: grid;
+        grid-template-columns: 46fr 12fr 12fr 15fr;
+        grid-template-areas:
+        "service price term btn";
+        align-items: center;
+        padding: 23px 16px 23px 16px;
+
+        &:not(:last-child)::after {
+            content: '';
+            background: $light-grey;
+            position: absolute;
+            width: calc(100% - 82px);
+            height: 1px;
+            transform: translateY(55px);
+        }
+    }
+}
+
+
+
+.wrapper {
+    &__service {
+        grid-area: service;
+    }
+
+    &__price {
+        grid-area: price;
+    }
+
+    &__term {
+        grid-area: term;
+    }
+}
+
+.btn {
+    &__order {
+        grid-area: btn;
+        justify-self: end;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $white;
+        text-align: right;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; /* 200% */
+        letter-spacing: -0.15px;
+        text-transform: uppercase;
+        width: 119px;
+        height: 32px;
+        border-radius: 16px;
+        background: $pink;
+        padding: 4px 8px 4px 12px;
+    }
+}
+
+.subtitle {
+    color: $grey;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 114.286% */
+    opacity: 0.7218;
+    padding-bottom: 4px;
+
+    &__service {
+        grid-area: subtitle-service;
+    }
+
+    &__price {
+        grid-area: subtitle-price;
+    }
+
+    &__term {
+        grid-area: subtitle-term;
+    }
+}
+
+.text {
+    color: $main-text-color;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: 0.2px;
+}
+
+.button-img {
+    &__order {
+        background: url(../../img/arrow_price.svg) center center no-repeat;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.table {
+    &__header {
+        display: grid;
+        grid-template-columns: 46fr 12fr 12fr 15fr;
+        grid-template-areas:
+        "subtitle-service subtitle-price subtitle-term .";
+        padding: 31px 16px 16px 16px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        border-radius: 6px;
+        background: $white;
+    }
+}

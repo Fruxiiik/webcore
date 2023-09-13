@@ -1,0 +1,33 @@
+.application {
+  padding: 24px;
+
+  &__text {
+    width: 100%;
+    color: $main-text-color;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.2px;
+  }
+
+  &__link {
+    display: inline-block;
+    padding-top: 16px;
+    color: $main-text-color;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+    text-decoration: none;
+  }
+
+  &__arrow {
+    display: inline-block;
+    vertical-align: bottom;
+    background: url("../../img/arrow_brand.svg") center center no-repeat;
+    width: 24px;
+    height: 24px;
+  }
+}

@@ -1,0 +1,30 @@
+.footer {
+  padding: 50px 16px 16px 16px;
+  position: relative;
+  transform: translateY(88px);
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__text {
+    color: $grey;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 114.286% */
+    opacity: 0.72;
+  }
+}
+
+
+
+
+
+
+
+
+

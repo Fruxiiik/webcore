@@ -33,12 +33,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-
-    "deploy" : "npm run build&&gh-pages -d dist",
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "webpack --mode development",
-    "start": "webpack serve",
-    "build": "webpack",
-    "clear": "rd /s /q dist"
+    "start": "webpack-dev-server --mode development --open",
+    "watch": "webpack --mode development --watch"
   },
   "keywords": [],
   "author": "",

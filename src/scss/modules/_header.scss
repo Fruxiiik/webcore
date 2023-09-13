@@ -1,0 +1,119 @@
+.logo__img {
+  vertical-align: middle;
+}
+
+.hidden {
+  display: none;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  padding: 0 16px;
+  position: fixed;
+  background-color: white;
+  height: 88px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+
+  &__left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__label {
+    gap: 8px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__text-hidden {
+    display: none;
+    color: $main-text-color;
+    text-align: right;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+}
+
+.button {
+  display: block;
+  border: none;
+
+  &__circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $pink;
+  }
+
+  &__menu {
+    background-image: url("../../img/menu.svg");
+  }
+
+  &__call {
+    display: none;
+    background-image: url("../../img/call.svg");
+  }
+
+  &__chat {
+    display: none;
+    background-image: url("../../img/chat.svg");
+  }
+
+  &__profile {
+    display: none;
+    background-image: url("../../img/profile.svg");
+  }
+
+  &__repair {
+    background-image: url("../../img/repair.svg");
+  }
+
+  &__checkstatus {
+    background-image: url("../../img/checkstatus.svg");
+  }
+
+  &__img {
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+
+}
+
+.divider {
+  &__header {
+    display: none;
+  }
+
+  &__menu {
+    display: none;
+  }
+
+  &__logo {
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+  }
+
+  &__img {
+    vertical-align: middle;
+  }
+}

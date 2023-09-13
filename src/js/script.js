@@ -1,18 +1,28 @@
-// import '../index.html';
 import '../scss/style.scss';
 
-let moreBrandBtn = document.querySelector('.more-brands__button');
-let moreBrandImage = document.querySelector('.more-brands__button-img');
-let moreBrandText = document.querySelector('.more-brands');
-let moreTextBtn = document.querySelector('.more-text__button');
-let moreTextImage = document.querySelector('.more-text__button-img');
+let moreTextBtn = document.querySelector('.button__more-text');
+let moreTextImage = document.querySelector('.button-img__more-text');
 let moreInfoText = document.querySelector('.more-text');
 let someText = document.querySelector('.info__more-text');
+let moreBrandBtn = document.querySelector('.button__more-brands');
+let moreBrandImage = document.querySelector('.button-img__more-brands');
+let moreBrandText = document.querySelector('.more-brands');
 const contentCards = document.getElementsByClassName('hide');
-let moreServicesBtn = document.querySelector('.more-services__button');
-let moreServicesImage = document.querySelector('.more-services__button-img');
+let moreServicesBtn = document.querySelector('.button__more-services');
+let moreServicesImage = document.querySelector('.button-img__more-services');
 let moreServicesText = document.querySelector('.more-services');
 const serviceCards = document.getElementsByClassName('services-hide')
+
+
+moreTextBtn.addEventListener('click', function (event) {
+    moreTextImage.classList.toggle('rotate');
+    someText.classList.toggle('info__more-text--active');
+    if(moreInfoText.textContent === 'Читать далее') {
+        moreInfoText.textContent = 'Скрыть';
+    } else {
+        moreInfoText.textContent = 'Читать далее';
+    }
+})
 
 moreServicesBtn.addEventListener('click', function (event) {
     moreServicesImage.classList.toggle('rotate');
@@ -23,16 +33,6 @@ moreServicesBtn.addEventListener('click', function (event) {
     }
     for (let i = 0; i < serviceCards.length; i++) {
         serviceCards[i].classList.toggle('hide-active');
-    }
-})
-
-moreTextBtn.addEventListener('click', function (event) {
-    moreTextImage.classList.toggle('rotate');
-    someText.classList.toggle('info__more-text-active');
-    if(moreInfoText.textContent === 'Читать далее') {
-        moreInfoText.textContent = 'Скрыть';
-    } else {
-        moreInfoText.textContent = 'Читать далее';
     }
 })
 
