@@ -78,10 +78,11 @@
         &:not(:last-child)::after {
             content: '';
             background: $light-grey;
-            position: absolute;
-            width: calc(100% - 82px);
+            position: relative;
+            //width: calc(100% - 82px);
+            width: 184.7%;
             height: 1px;
-            transform: translateY(55px);
+            transform: translateY(23px);
         }
     }
 }

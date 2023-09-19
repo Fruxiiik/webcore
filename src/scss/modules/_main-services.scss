@@ -35,6 +35,13 @@
   &__btn-services {
     margin-left: auto;
     margin-bottom: 16px;
+    transition: transform 0.3s ease-in-out;
+    &:focus {
+      transform: scale(1.1);
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 

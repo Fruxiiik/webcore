@@ -1,5 +1,111 @@
 import '../scss/style.scss';
 
+let body = document.body;
+let menuButton = document.querySelector('.button__menu');
+let menu = document.querySelector('.menu');
+let menuOverlay = document.querySelector('.menu-overlay');
+let buttonClose = document.querySelector('.button__close');
+
+
+const elements = [menuButton, buttonClose, menuOverlay];
+
+document.addEventListener("DOMContentLoaded", () => {
+    for( let j = 0; j < elements.length; j++) {
+        elements[j].addEventListener("click", () => {
+            toggleTwoClasses(menu, "visible", "hidden", 500);
+        });
+        elements[j].addEventListener("click", () => {
+            toggleTwoClasses(menuOverlay, "visible", "hidden", 500);
+        });
+    }
+});
+
+function toggleTwoClasses(element, first, second, timeOfAnimation) {
+        if (!element.classList.contains(first)) {
+            element.classList.add(first);
+            body.classList.add('body-fixed');
+            element.classList.remove(second);
+        } else {
+            element.classList.add(second);
+            if (menu.classList.contains(second)) {
+                body.classList.remove('body-fixed');
+            }
+            window.setTimeout(function() {
+                element.classList.remove(first);
+            }, timeOfAnimation);
+        }
+
+}
+
+
+let buttonFeedback = document.getElementsByClassName('button__chat');
+let chatClose = document.querySelector('.chat__close');
+let modalFeedback = document.querySelector('.modal-feedback');
+let feedbackOverlay = document.querySelector('.feedback-overlay');
+
+
+const elementsFeedback = [buttonFeedback[0], chatClose, feedbackOverlay];
+const elementsFeedbackSecond = [buttonFeedback[1], chatClose, feedbackOverlay];
+
+console.log(elementsFeedback);
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    for( let j = 0; j < elementsFeedback.length; j++) {
+        elementsFeedback[j].addEventListener("click", () => {
+            toggleTwoClasses(modalFeedback, "visible", "hidden", 500);
+        });
+        elementsFeedback[j].addEventListener("click", () => {
+            toggleTwoClasses(feedbackOverlay, "visible", "hidden", 500);
+        });
+    }
+    for( let j = 0; j < elementsFeedbackSecond.length; j++) {
+        elementsFeedbackSecond[j].addEventListener("click", () => {
+            toggleTwoClasses(modalFeedback, "visible", "hidden", 500);
+        });
+        elementsFeedbackSecond[j].addEventListener("click", () => {
+            toggleTwoClasses(feedbackOverlay, "visible", "hidden", 500);
+        });
+    }
+});
+
+
+
+
+let buttonCall = document.getElementsByClassName('button__call');
+let callClose = document.querySelector('.call__close');
+let modalCall = document.querySelector('.modal-call');
+let callOverlay = document.querySelector('.call-overlay');
+
+
+const elementsCall = [buttonCall[0], callClose, callOverlay];
+const elementsCallSecond = [buttonCall[1], callClose, callOverlay];
+document.addEventListener("DOMContentLoaded", () => {
+
+    for( let j = 0; j < elementsCall.length; j++) {
+        elementsCall[j].addEventListener("click", () => {
+            toggleTwoClasses(modalCall, "visible", "hidden", 500);
+        });
+        elementsCall[j].addEventListener("click", () => {
+            toggleTwoClasses(callOverlay, "visible", "hidden", 500);
+        });
+    }
+    for( let j = 0; j < elementsCallSecond.length; j++) {
+        elementsCallSecond[j].addEventListener("click", () => {
+            toggleTwoClasses(modalCall, "visible", "hidden", 500);
+        });
+        elementsCallSecond[j].addEventListener("click", () => {
+            toggleTwoClasses(callOverlay, "visible", "hidden", 500);
+        });
+    }
+});
+
+
+
+
+
+
 let moreTextBtn = document.querySelector('.button__more-text');
 let moreTextImage = document.querySelector('.button-img__more-text');
 let moreInfoText = document.querySelector('.more-text');

@@ -1,0 +1,172 @@
+.feedback-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 16;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+
+.modal-feedback {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 24px;
+  padding-bottom: 24px;
+  background-color: $white;
+  box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.20),
+  -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+  z-index: 17;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__title {
+    color: $main-text-color;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    padding-bottom: 24px;
+
+    &::before {
+      content: '';
+      width: 4px;
+      height: 40px;
+      position: absolute;
+      background-color: $green;
+      top: 88px;
+      left: 0;
+      border-radius: 0 10px 10px 0;
+    }
+  }
+
+  &__text {
+    min-width: 272px;
+    width: auto;
+    height: 64px;
+    font-size: 14px;
+    line-height: 16px;
+    color: $grey;
+    margin-bottom: 16px;
+  }
+  &__span {
+    color: $pink;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  &__header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    transition: padding-bottom 0.5s ease-in-out;
+  }
+}
+
+p {
+  padding-bottom: 16px;
+}
+
+.form {
+  &__input {
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid #EAEAEA;
+    background: #FFF;
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #B5B6BC;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+  }
+
+  &__textarea {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #EAEAEA;
+    background: #FFF;
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #B5B6BC;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+  }
+}
+
+.button {
+  transition: transform 0.3s ease-in-out;
+  &:focus {
+    transform: scale(1.1);
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &__close {
+    background-image: url("../../img/close.svg");
+  }
+}
+
+.order {
+  &__chat {
+    align-self: end;
+    width: 136px;
+    padding: 4px 8px 4px 20px;
+  }
+}
+
+
+.visible {
+  display: flex;
+  animation: fadeInFromNone 0.6s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.hidden {
+  animation: fadeOutFromFlex 0.6s ease-in-out;
+}
+
+@keyframes fadeInFromNone {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutFromFlex {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

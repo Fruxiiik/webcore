@@ -2,6 +2,11 @@
   position: relative;
   transform: translateY(88px);
   padding-top: 24px;
+  &__buttons {
+    &--hidden {
+      display: none;
+    }
+  }
 
   &__header {
     padding: 0 16px;

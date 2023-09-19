@@ -67,6 +67,16 @@
     width: 40px;
     height: 40px;
   }
+
+  &__btn-brands {
+    transition: transform 0.3s ease-in-out;
+    &:focus {
+      transform: scale(1.1);
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 }
 
 

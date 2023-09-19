@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const mode = process.env.NODE_ENV || 'development';
 const devMode = mode === 'development';
@@ -25,6 +26,12 @@ module.exports = {
     assetModuleFilename: "assets/[name][ext]",
   },
   plugins: [
+    // new CopyWebpackPlugin([
+    //   {
+    //     from: './src/img',
+    //     to: 'img',
+    //   },
+    // ]),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "src", "index.html"),
     }),
@@ -76,6 +83,14 @@ module.exports = {
           filename: 'fonts/[name][ext]',
         },
       },
+      // {
+      //   test: /\.(svg|png|jpg|jpeg|webp)$/,
+      //   use: [
+      //     {
+      //       loader: 'file-loader?name=./assets/[name].[ext]'
+      //     },
+      //   ]
+      // },
       {
         test: /\.(jpe?g|png|webp|gif|svg)$/i,
         use: devMode

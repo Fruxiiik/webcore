@@ -2,10 +2,6 @@
   vertical-align: middle;
 }
 
-.hidden {
-  display: none;
-}
-
 .wrapper {
   display: flex;
   justify-content: space-between;
@@ -26,7 +22,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 1rem;
+    gap: 16px;
   }
 
   &__label {
@@ -59,6 +55,7 @@
   border: none;
 
   &__circle {
+    align-self: center;
     width: 40px;
     height: 40px;
     border-radius: 50%;
